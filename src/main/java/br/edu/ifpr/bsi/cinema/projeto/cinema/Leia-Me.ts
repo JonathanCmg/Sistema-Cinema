@@ -7,14 +7,14 @@ ou remover quaisquer itens listados, lembrem-se de sempre atualizar a tabela
 e sempra dar pull(Atualizar o seu projeto) e push (enviar o seu projeto)
 
 Criar Classes 
-Salas
-Filmes
-Ingresso
+SalasX
+FilmesX
+IngressoX
 
 Criar funcionalidades
 Capacidade das salas
-Criar atributos dos filmes
+Criar atributos dos filmesX
 Registro de novos filmes
 Criar funcionamento das sessões
 Criar compra de ingressos
-Atributos dos ingressos
+Atributos dos ingressosX
