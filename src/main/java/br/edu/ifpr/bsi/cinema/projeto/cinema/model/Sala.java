@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package br.edu.ifpr.bsi.cinema.projeto.cinema.classes;
+package br.edu.ifpr.bsi.cinema.projeto.cinema.model;
 
 /**
  *
@@ -19,8 +19,9 @@ public class Sala {
     public Sala() {
     }
     //Construtor Principal
-    public Sala(int lugares, int numeroSala) {
+    public Sala(int lugares,int lugaresOcupados, int numeroSala) {
         this.lugares = lugares;
+        this.lugaresOcupados = lugaresOcupados;
         this.numeroSala = numeroSala;
     }
     
@@ -47,6 +48,11 @@ public class Sala {
 
     public void setLugaresOcupados(int lugaresOcupados) {
         this.lugaresOcupados = lugaresOcupados;
+    }
+
+    @Override
+    public String toString() {
+        return "Sala{" + "lugares=" + lugares + ", lugaresOcupados=" + lugaresOcupados + ", numeroSala=" + numeroSala + '}';
     }
     
     
