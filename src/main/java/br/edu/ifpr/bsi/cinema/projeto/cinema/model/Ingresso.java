@@ -17,12 +17,10 @@ public class Ingresso extends Sala{
     private boolean estudante;
     private double valorIngresso;
 
-    public Ingresso(String nomeCliente, int idade, boolean estudante, double valorIngresso) {
-        this.nomeCliente = nomeCliente;
-        this.idade = idade;
-        this.estudante = estudante;
+    public Ingresso(double valorIngresso) {
         this.valorIngresso = valorIngresso;
     }
+    
 
     public String getNomeCliente() {
         return nomeCliente;
@@ -62,14 +60,12 @@ public class Ingresso extends Sala{
         }
         if(getLugaresOcupados() >= getLugares()){
             System.out.println("Lotação maxima atingida");
-        }
-        System.out.println("--------------------------------------");
-        System.out.println("Nome:"+nomeCliente);
-        System.out.println("idade:"+idade);
-        System.out.println("Filme"+f.getNomeFilme());
-        System.out.println("Duração"+f.getDuração());
-        System.out.println("Valor Ingresso:"+valorIngresso);
-        System.out.println("Numero Sala:"+getNumeroSala());
-        System.out.println("---------------------------------------");
+            
+        }else{
+            System.out.println("--------------------------------------");
+            System.out.println("Nome:"+nomeCliente);
+            System.out.println("idade:"+idade);
+            System.out.println("Valor Ingresso:"+valorIngresso);
+        }      
     }
 }
