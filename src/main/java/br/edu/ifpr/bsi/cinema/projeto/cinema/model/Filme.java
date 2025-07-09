@@ -17,18 +17,20 @@ public class Filme {
     private String diretor;
     private String atorPrincipal;
     private String papel;
+    private double valorIngresso;
     
     //Contrutor Vazio
     public Filme() {
     }
     
     //Construtor Principal
-    public Filme(String nomeFilme, float duração,String diretor, String atorPrincipal, String papel) {
+    public Filme(String nomeFilme, float duração,String diretor, String atorPrincipal, String papel,double valorIngresso) {
         this.nomeFilme = nomeFilme;
         this.duração = duração;
         this.diretor = diretor;
         this.atorPrincipal = atorPrincipal;
         this.papel = papel;
+        this.valorIngresso = valorIngresso;
     }
     
     //Getters e Setters
@@ -71,6 +73,15 @@ public class Filme {
     public void setPapel(String papel) {
         this.papel = papel;
     }
+
+    public double getValorIngresso() {
+        return valorIngresso;
+    }
+
+    public void setValorIngresso(double valorIngresso) {
+        this.valorIngresso = valorIngresso;
+    }
+    
 
     @Override
     public String toString() {

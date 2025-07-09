@@ -13,14 +13,14 @@ import java.util.ArrayList;
  *
  * @author Jonat
  */
-public class Sessão {
+public class Sessão extends Filme {
         private Sala sala;
         ArrayList<Filme> ListaSessao = new ArrayList<>();
         LocalTime inicioSessao;
         
     
     public Sessão(int lugares,int lugaresOcupados,int numeroDaSala, LocalTime inicioSessao){
-        this.sala = new Sala(lugares, lugaresOcupados, numeroDaSala);
+        this.sala = new Sala(lugares,lugaresOcupados,numeroDaSala);
         this.inicioSessao = inicioSessao;
     }    
     public void AdicionarFilme(ArrayList<Filme> listaFilmes, int idFilme){
@@ -37,8 +37,8 @@ public class Sessão {
         LocalTime fimDaSessao = inicioSessao.plusMinutes(duracaoSessao);
         
         
-        System.out.println("Numero da sala:"+sala.getLugares());
-        System.out.println("Duracao da Sessao: "+ inicioSessao);
+        System.out.println("Numero da sala:"+sala.getNumeroSala());
+        System.out.println("Inicio da Sessao: "+ inicioSessao);
         System.out.println("Duracao Total: "+ duracaoSessao+ " Minutos");
         System.out.println("Termino da Sessao: "+fimDaSessao);
     }

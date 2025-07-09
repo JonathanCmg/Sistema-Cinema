@@ -55,5 +55,4 @@ public class Sala {
         return "Sala{" + "lugares=" + lugares + ", lugaresOcupados=" + lugaresOcupados + ", numeroSala=" + numeroSala + '}';
     }
     
-    
 }

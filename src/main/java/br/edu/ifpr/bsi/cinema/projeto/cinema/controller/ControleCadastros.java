@@ -29,16 +29,16 @@ public class ControleCadastros {
     
     
     
-    public void CadastrarFilme(String nome, float duracao, String diretor, String atorPrincipal, String Papel){
-        Filme filme = new Filme(nome,duracao,diretor,atorPrincipal,Papel);
+    public void CadastrarFilme(String nome, float duracao, String diretor, String atorPrincipal, String Papel,double valorIngresso){
+        Filme filme = new Filme(nome,duracao,diretor,atorPrincipal,Papel,valorIngresso);
         listaFilmes.add(filme);
-        System.out.println(listaFilmes);
+        //System.out.println(listaFilmes);
     }
     
     public void CadastrarSala(int lugares, int lugaresOcupados, int id){
         Sala sala = new Sala(lugares, lugaresOcupados, id);
         listaSalas.add(sala);
-        System.out.println(listaSalas);
+        //System.out.println(listaSalas);
     }
     
 

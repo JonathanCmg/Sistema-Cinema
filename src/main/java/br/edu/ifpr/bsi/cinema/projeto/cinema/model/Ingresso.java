@@ -55,17 +55,18 @@ public class Ingresso extends Sala{
     }
     
     public void ComprarIngresso(){
+        int lugares = super.getLugaresOcupados();
+        int lugaresOcupados = super.getLugaresOcupados();
+        
         if(idade>18||estudante == true){
+            if(valorIngresso== 30){
             valorIngresso = valorIngresso / 2;
+            }
         }
-        if(getLugaresOcupados() >= getLugares()){
-            System.out.println("Lotação maxima atingida");
-            
-        }else{
+
             System.out.println("--------------------------------------");
             System.out.println("Nome:"+nomeCliente);
             System.out.println("idade:"+idade);
             System.out.println("Valor Ingresso:"+valorIngresso);
-        }      
     }
 }
